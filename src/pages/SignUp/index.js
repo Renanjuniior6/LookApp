@@ -2,9 +2,14 @@
 import React from 'react';
 import { Box, Spacer, Text, Title, Button, Input } from '../../components';
 
+import { useNavigation } from '@react-navigation/native';
+
 import { StatusBar } from 'react-native';
 
 const SignUp = () => {
+
+  const {navigate, goBack} = useNavigation();
+
   return (
     <>
     <StatusBar barStyle="dark-content"/>
@@ -22,12 +27,12 @@ const SignUp = () => {
       <Input placeholder="Password" secureTextEntry/>
 
       <Spacer size="50px" />
-      <Button block>
+      <Button block onPress={() => navigate('Feed')}>
         <Text color="light">Create new account</Text>
       </Button>
       <Spacer size="20px" />
-      <Text onPress={() => alert('test')} underline>
-        Back to sign in
+      <Text onPress={() => goBack()} underline>
+        Back to home
       </Text>
     </Box>
     </>

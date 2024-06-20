@@ -1,10 +1,11 @@
-import React from "react";
+/* eslint-disable prettier/prettier */
+import React from 'react';
 import { Box, Text, ScrollView } from '../index';
-import Story from ".";
+import Story from '.';
 
 const StoryList = () => {
   return (
-    <Box fluid>
+    <Box fluid height="260px">
       <Box row fluid justify="space-between" hasPadding height="60px">
         <Text bold color="dark">
           Stories

@@ -4,7 +4,7 @@ import { Box, Spacer, Text, Title, Button, Input } from '../../components';
 
 import { StatusBar } from 'react-native';
 
-const SignIn = () => {
+const SignIn = ({navigation: {navigate, replace}}) => {
   return (
     <>
     <StatusBar barStyle="dark-content" />
@@ -20,11 +20,11 @@ const SignIn = () => {
       <Input placeholder="Password" secureTextEntry/>
 
       <Spacer size="50px" />
-      <Button block>
+      <Button block onPress={() => replace('Feed')}>
         <Text color="light">Sign In my account</Text>
       </Button>
       <Spacer size="20px" />
-      <Text onPress={() => alert('test')} underline>
+      <Text onPress={() => navigate('SignUp')} underline>
         Create new account
       </Text>
     </Box>
