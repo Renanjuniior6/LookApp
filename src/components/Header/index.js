@@ -4,11 +4,11 @@ import React from 'react';
 import { Box, Title, Touchable } from '../index.js';
 import { SafeAreaView, StatusBar, View } from 'react-native';
 import { colors } from '../../styles/theme.json';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import Icon from 'react-native-vector-icons/SimpleLineIcons.js';
 import { useNavigation } from '@react-navigation/native';
 import util from '../../util.js';
 
-const Header = ({ title = 'Explore', right = null }) => {
+const Header = ({ title = 'Explore', right = null, goBack = false }) => {
   const navigation = useNavigation();
 
   return (
@@ -33,9 +33,9 @@ const Header = ({ title = 'Explore', right = null }) => {
           justify="center"
           align="center"
           hasPadding
-          onPress={() => navigation.openDrawer()}
+          onPress={() => navigation[!goBack ? 'openDrawer' : 'goBack']()}
         >
-          <Icon name="menu" size={25} color="#000" />
+          <Icon name={!goBack ? 'menu' : 'arrow-left'} size={18} color="#000" />
         </Touchable>
         <Box align="center" justify="center">
           <Title>{title}</Title>

@@ -3168,6 +3168,7 @@ __metadata:
     react-native-reanimated: ^3.12.0
     react-native-safe-area-context: ^4.10.5
     react-native-screens: ^3.32.0
+    react-native-stretchy: ^4.0.0
     react-native-vector-icons: ^10.1.0
     react-test-renderer: 18.2.0
     styled-components: ^6.1.11
@@ -8289,6 +8290,16 @@ __metadata:
     react: "*"
     react-native: "*"
   checksum: afcb93e9cd48d5071278213bbc4ddc18112dbdbd16c11e3c7129368614396d8aae13fd70bb299f3c84f52a28e34af06ccdc514de1e97a99f4197069301dab136
+  languageName: node
+  linkType: hard
+
+"react-native-stretchy@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "react-native-stretchy@npm:4.0.0"
+  peerDependencies:
+    react: ^16.11.0
+    react-native: ">=0.60.0"
+  checksum: fcebfdb204ba693e0f8fc68edf30ffb8739116afe0269abc60167fc5de4fc33b622170fd72929fb2a0f4eec9f1dbcf3535789c5be5930fb0dbcb4dac415e8452
   languageName: node
   linkType: hard
 

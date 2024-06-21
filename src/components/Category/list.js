@@ -11,7 +11,7 @@ const CategoryList = () => {
         paddingLeft: 20,
         paddingRight: 20,
     }}>
-      {Array.from(Array(25))?.map((item) => (
+      {Array.from(Array(10))?.map((item) => (
         <Category title={'Woman'} description={'3450 items'}/>
       ))}
     </ScrollView>
