@@ -18,6 +18,9 @@ import Home from '../pages/Home';
 import SignIn from '../pages/SignIn';
 import SignUp from '../pages/SignUp';
 import Feed from '../pages/Feed';
+import Marketplace from '../pages/Marketplace';
+import Product from '../pages/Marketplace/product';
+import Category from '../pages/Marketplace/category';
 
 import { colors } from '../styles/theme.json';
 import util from '../util';
@@ -40,7 +43,7 @@ const DrawerComponent = () => {
       initialRouteName="Feed"
       drawerContent={(props) => <CustomDrawerComponent {...props} />}
       screenOptions={{
-        drawerActiveBackgroundColor: util.toAlpha(colors.primary, 60),
+        drawerActiveBackgroundColor: util.toAlpha(colors.primary, 70),
         drawerActiveTintColor: colors.light,
         drawerInactiveTintColor: util.toAlpha(colors.light, 60),
         drawerStyle: {
@@ -62,7 +65,7 @@ const DrawerComponent = () => {
           drawerIcon: ({ color }) => <Icon name="tag" color={color} />,
         }}
         name="Marketplace"
-        component={Feed}
+        component={Marketplace}
       />
       <Drawer.Screen
         options={{
@@ -99,6 +102,16 @@ const Routes = () => {
           options={{ headerShown: false }}
           name="Feed"
           component={DrawerComponent}
+        />
+         <Stack.Screen
+          options={{ headerShown: false }}
+          name="Category"
+          component={Category}
+        />
+         <Stack.Screen
+          options={{ headerShown: false }}
+          name="Product"
+          component={Product}
         />
       </Stack.Navigator>
     </NavigationContainer>
