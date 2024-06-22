@@ -6,7 +6,7 @@ import Post from '.';
 const PostList = () => {
   return (
     <Box hasPadding>
-      {Array.from(Array(10))?.map((item) => (
+      {Array.from(Array(6))?.map((item) => (
         <Post />
       ))}
     </Box>

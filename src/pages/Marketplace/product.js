@@ -4,6 +4,7 @@ import { StretchyScrollView } from 'react-native-stretchy';
 
 import { Touchable, Box, Title, Text, Spacer, Button } from '../../components';
 import Header from '../../components/Header';
+import Picker from '../../components/Picker';
 import Icon from 'react-native-vector-icons/SimpleLineIcons';
 import { colors } from '../../styles/theme.json';
 import util from '../../util';
@@ -43,6 +44,17 @@ const Product = () => {
             will fit your body and warm you up all over and during spring. This
             item will fit your body and warm you up all over and during spring.
           </Text>
+          <Spacer size="30px" />
+          <Picker options={[
+            {label: 'P', value: 'P'},
+            {label: 'M', value: 'M'},
+            {label: 'G', value: 'G'},
+            {label: 'XG', value: 'XG'},
+          ]}
+          onChange={(value) => alert(value)}
+            initialValue="M"
+            title="Size"
+          />
           <Spacer size="30px" />
           <Button block>
             <Text color="light">Add to cart</Text>
