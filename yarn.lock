@@ -3168,6 +3168,7 @@ __metadata:
     react-native-reanimated: ^3.12.0
     react-native-safe-area-context: ^4.10.5
     react-native-screens: ^3.32.0
+    react-native-segmented-picker: ^2.0.2
     react-native-stretchy: ^4.0.0
     react-native-vector-icons: ^10.1.0
     react-test-renderer: 18.2.0
@@ -8127,7 +8128,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
+"prop-types@npm:>= 15.0.0, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -8234,6 +8235,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-native-animatable@npm:^1.3.0":
+  version: 1.4.0
+  resolution: "react-native-animatable@npm:1.4.0"
+  dependencies:
+    prop-types: ^15.8.1
+  checksum: a1b211aff745b97351d78643d641fa298f7d71524eaf22fee8a69257ce52e85d6b3caf8e7fd26a521af34984fba7402b7c632c35ea69d618769387d1dcb6b32a
+  languageName: node
+  linkType: hard
+
 "react-native-gesture-handler@npm:^2.16.2":
   version: 2.16.2
   resolution: "react-native-gesture-handler@npm:2.16.2"
@@ -8290,6 +8300,19 @@ __metadata:
     react: "*"
     react-native: "*"
   checksum: afcb93e9cd48d5071278213bbc4ddc18112dbdbd16c11e3c7129368614396d8aae13fd70bb299f3c84f52a28e34af06ccdc514de1e97a99f4197069301dab136
+  languageName: node
+  linkType: hard
+
+"react-native-segmented-picker@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "react-native-segmented-picker@npm:2.0.2"
+  dependencies:
+    prop-types: ">= 15.0.0"
+    react-native-animatable: ^1.3.0
+  peerDependencies:
+    react: ">= 16.3.0"
+    react-native: ">= 0.55.0"
+  checksum: 91837847d62c59ce31eb574b5e25dddac1e96d94bf53dc2142046594cbf96dcfbc3b7500329945a8095a010104a6c1417e8b4e087207c66921f8b1c02925e546
   languageName: node
   linkType: hard
 

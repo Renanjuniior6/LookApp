@@ -1,13 +1,17 @@
 /* eslint-disable prettier/prettier */
+/* eslint-disable react-native/no-inline-styles */
 import React, { useState } from 'react';
 
 import Header from '../../components/Header';
 import Product from '../../components/Product';
 import Tabs from '../../components/Tabs';
-import { ScrollView, Spacer, Box, Title, Text, Button } from '../../components';
+import PaymentForm from '../../components/Forms/payment';
+
+import { ScrollView, Spacer, Box, Text, Button } from '../../components';
+import { colors } from '../../styles/theme.json';
 
 const Cart = () => {
-  const [tab, setTab] = useState('cart');
+  const [tab, setTab] = useState('payment');
 
   return (
     <>
@@ -58,14 +62,71 @@ const Cart = () => {
               </Text>
             </Box>
             <Spacer size="50px" />
-            <Button block onPress={() => {setTab('payment');}}>
+            <Button
+              block
+              onPress={() => {
+                setTab('payment');
+              }}
+            >
               <Text color="light">Place order</Text>
             </Button>
           </>
         )}
         {tab === 'payment' && (
           <>
-            <Title>Payment</Title>
+            <Spacer size="20px" />
+            <Box
+              row
+              width="100%"
+              justify="space-between"
+              style={{
+                borderBottomWidth: 0.5,
+                borderBottomColor: colors.muted,
+                paddingBottom: 10,
+              }}
+            >
+              <Text color="dark" bold>
+                Shipping address
+              </Text>
+              <Text color="danger">Change</Text>
+            </Box>
+            <Spacer />
+            <Text color="dark">
+              Tiana Rosser, 4517 Washington Ave Manchester, Kentucky 39495
+              United States
+            </Text>
+
+            <Spacer size="30px" />
+
+            <Box
+              row
+              width="100%"
+              justify="space-between"
+              style={{
+                borderBottomWidth: 0.5,
+                borderBottomColor: colors.muted,
+                paddingBottom: 10,
+              }}
+            >
+              <Text color="dark" bold>
+                Delivery details
+              </Text>
+              <Text color="danger">Change</Text>
+            </Box>
+            <Spacer />
+            <Text color="dark">Standard Delivery</Text>
+            <Text color="dark">Saturday 27 - Tuesday 30</Text>
+            <Text color="dark">Cost: $10</Text>
+            <Spacer size="30px" />
+            <PaymentForm onChange={(creditCardData) => console.log(creditCardData)}/>
+            <Spacer size="30px" />
+            <Button
+              block
+              onPress={() => {}}
+            >
+              <Text color="light">Confirmation</Text>
+            </Button>
+            <Spacer size="50px"/>
           </>
         )}
       </ScrollView>
