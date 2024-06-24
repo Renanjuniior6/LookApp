@@ -21,6 +21,7 @@ import Feed from '../pages/Feed';
 import Marketplace from '../pages/Marketplace';
 import Product from '../pages/Marketplace/product';
 import Category from '../pages/Marketplace/category';
+import Cart from '../pages/Cart';
 
 import { colors } from '../styles/theme.json';
 import util from '../util';
@@ -82,7 +83,7 @@ const DrawerComponent = () => {
 const Routes = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
+      <Stack.Navigator initialRouteName="Cart">
         <Stack.Screen
           options={{ headerShown: false }}
           name="Home"
@@ -112,6 +113,11 @@ const Routes = () => {
           options={{ headerShown: false }}
           name="Product"
           component={Product}
+        />
+         <Stack.Screen
+          options={{ headerShown: false }}
+          name="Cart"
+          component={Cart}
         />
       </Stack.Navigator>
     </NavigationContainer>

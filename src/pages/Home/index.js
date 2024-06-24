@@ -36,13 +36,4 @@ const Home = ({navigation}) => {
 
 };
 
-// const styles = StyleSheet.create({
-//   block: {
-//     backgroundColor: '#fff',
-//     flex: 1,
-//     justifyContent: 'center',
-//     alignItems: 'center',
-//   },
-// });
-
 export default Home;
