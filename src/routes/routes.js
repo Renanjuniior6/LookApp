@@ -22,6 +22,7 @@ import Marketplace from '../pages/Marketplace';
 import Product from '../pages/Marketplace/product';
 import Category from '../pages/Marketplace/category';
 import Cart from '../pages/Cart';
+import Orderspage from '../pages/Orders';
 
 import { colors } from '../styles/theme.json';
 import util from '../util';
@@ -74,7 +75,7 @@ const DrawerComponent = () => {
           drawerIcon: ({ color }) => <Icon name="basket" color={color} />,
         }}
         name="Orders"
-        component={Feed}
+        component={Orderspage}
       />
     </Drawer.Navigator>
   );
@@ -83,7 +84,7 @@ const DrawerComponent = () => {
 const Routes = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
+      <Stack.Navigator initialRouteName="Feed">
         <Stack.Screen
           options={{ headerShown: false }}
           name="Home"
