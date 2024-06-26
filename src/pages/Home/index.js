@@ -1,10 +1,15 @@
 /* eslint-disable prettier/prettier */
-import React from 'react';
+import React, { useContext } from 'react';
 import { StatusBar } from 'react-native';
 
 import {Title, Text, Button, Box, Spacer} from '../../components';
 
+import { AppContext } from '../../contexts/app';
+
 const Home = ({navigation}) => {
+
+  const context = useContext(AppContext);
+
   return (
     <>
       <StatusBar barStyle="light-content" />
