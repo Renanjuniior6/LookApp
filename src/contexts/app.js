@@ -1,11 +1,14 @@
 /* eslint-disable prettier/prettier */
-import React, { createContext } from 'react';
+import React, { createContext, useState } from 'react';
 
 export const AppContext = createContext({});
 
 const ContextProvider = ({ children }) => {
+
+  const [user, setUser] = useState({});
+
   return (
-    <AppContext.Provider value={{ name: 'Renan' }}>
+    <AppContext.Provider value={{ user, setUser }}>
       {children}
     </AppContext.Provider>
   );

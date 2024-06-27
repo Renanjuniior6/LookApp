@@ -1,10 +1,16 @@
 /* eslint-disable prettier/prettier */
-import React, { useState } from 'react';
+/* eslint-disable no-alert */
+import React, { useState, useContext } from 'react';
 import { StatusBar } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import api from '../../services/api';
 import { Box, Spacer, Text, Title, Button, Input } from '../../components';
 
+import { AppContext } from '../../contexts/app';
+
 const SignIn = ({ navigation: { navigate, replace } }) => {
+  const {setUser: setUserContext} = useContext(AppContext);
+
   const [user, setUser] = useState({
     email: '',
     password: '',
@@ -12,13 +18,34 @@ const SignIn = ({ navigation: { navigate, replace } }) => {
 
   const requestLogin = async () => {
     try {
-      const { data: userData } = await api.get('/users', {
+
+      if(user.email?.length === 0 || user.password?.length === 0) {
+        alert('All fields are necessary');
+        return;
+      }
+
+      const { data: users } = await api.get('/users', {
         params: {
-          email: user.email,
+          email: user.email?.toLocaleLowerCase(),
           password: user.password,
         },
       });
-      console.log(userData);
+
+      const [loggedUser] = users;
+
+      if(!loggedUser) {
+        alert('User not found');
+        return false;
+      }
+
+      // STORE IN DEVICE
+    await AsyncStorage.setItem('@user', JSON.stringify(loggedUser));
+
+      // PUT USER IN CONTEXT
+      setUserContext(loggedUser);
+      // GO TO FEED
+      replace('Feed');
+
     } catch (err) {
       alert(err.message);
     }

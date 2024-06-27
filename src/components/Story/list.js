@@ -3,7 +3,7 @@ import React from 'react';
 import { Box, Text, ScrollView } from '../index';
 import Story from '.';
 
-const StoryList = () => {
+const StoryList = ({stories}) => {
   return (
     <Box fluid height="260px">
       <Box row fluid justify="space-between" hasPadding height="60px">
