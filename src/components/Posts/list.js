@@ -5,9 +5,11 @@ import Post from '.';
 
 const PostList = ({posts}) => {
   return (
-    <Box hasPadding>
-      {Array.from(Array(6))?.map((item) => (
-        <Post />
+    <Box style={{
+      minWidth: '100%',
+    }}>
+      {posts?.map((post) => (
+        <Post post={post}/>
       ))}
     </Box>
   );

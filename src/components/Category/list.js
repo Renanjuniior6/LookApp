@@ -1,18 +1,19 @@
 /* eslint-disable prettier/prettier */
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import { ScrollView } from '../index';
 
 import Category from '.';
 
-const CategoryList = () => {
+const CategoryList = ({categories}) => {
   return (
     <ScrollView fluid style={{
         paddingTop: 20,
         paddingLeft: 20,
         paddingRight: 20,
     }}>
-      {Array.from(Array(10))?.map((item) => (
-        <Category title={'Woman'} description={'3450 items'}/>
+      {categories?.map((category) => (
+        <Category category={category}/>
       ))}
     </ScrollView>
   );

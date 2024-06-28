@@ -4,7 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 
 import { Text, Box, Touchable, Spacer, Cover } from '../index';
 
-const Product = ({ cover, brand, title, price, selected = false }) => {
+const Product = ({ product, selected = false }) => {
   const { navigate } = useNavigation();
 
   return (
@@ -15,11 +15,11 @@ const Product = ({ cover, brand, title, price, selected = false }) => {
       background="light"
       spacing={selected ? '5px 0' : '0px 0px 2px 0px'}
     >
-      <Cover width="80px" height="80px" image={cover} />
+      <Cover width="80px" height="80px" image={product?.cover} />
       <Box hasPadding style={{ paddingTop: 0, paddingBottom: 0 }}>
-        {!selected && <Text color="dark">{brand}</Text>}
+        {!selected && <Text color="dark">{product?.brand}</Text>}
         <Text color="dark" bold>
-          {title}
+          {product?.title}
         </Text>
         <Spacer />
         {selected && (
@@ -28,7 +28,7 @@ const Product = ({ cover, brand, title, price, selected = false }) => {
           </Box>
         )}
         <Box row width="100%" justify="space-between">
-          <Text color="dark">{price}</Text>
+          <Text color="dark">{product?.price}</Text>
           <Text color="danger">{selected ? 'remove' : 'Add to cart'}</Text>
         </Box>
       </Box>

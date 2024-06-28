@@ -15,8 +15,8 @@ const StoryList = ({stories}) => {
         </Text>
       </Box>
       <ScrollView horizontal style={{ paddingLeft: 20 }}>
-        {Array.from(Array(6))?.map((item) => (
-          <Story />
+        {stories?.map((story) => (
+          <Story story={story}/>
         ))}
       </ScrollView>
     </Box>
