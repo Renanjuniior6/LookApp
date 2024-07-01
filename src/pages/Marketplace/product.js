@@ -1,5 +1,6 @@
 /* eslint-disable prettier/prettier */
-import React from 'react';
+/* eslint-disable react/no-unstable-nested-components */
+import React, { useState, useEffect } from 'react';
 import { StretchyScrollView } from 'react-native-stretchy';
 
 import { Touchable, Box, Title, Text, Spacer, Button } from '../../components';
@@ -9,50 +10,51 @@ import Icon from 'react-native-vector-icons/SimpleLineIcons';
 import { colors } from '../../styles/theme.json';
 import util from '../../util';
 
-const Product = () => {
+const Product = ({navigation, route}) => {
+
+  const { product } = route?.params;
+  const [size, setSize] = useState();
+
+  useEffect(() => {
+    setSize(product?.sizes?.[0]?.value);
+  }, [product]);
+
   return (
     <>
       <Header
-        title="striped cardigan"
+        title={product?.title}
         goBack
         right={() => (
           <Touchable hasPadding width="80px">
-            <Icon name="bag" size={20} color="#000" />
+            <Icon name="bag" size={20} color="#000" onPress={() => navigation.navigate('Cart')} />
           </Touchable>
         )}
       />
       <StretchyScrollView
         image={{
-          uri: 'https://s3-alpha-sig.figma.com/img/36f6/ffe6/aab4cb1ff4e61074bdfd1b9a73b67c0b?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jCMCoXHKnJzPX88HDZu2QT7BmD4Krd~KN2EkZw7~MFSi0-DQTEBEq-SAyRk6-sagaj~PjEV3Jy9RW-NtLderih1ON~NFBy2pJl3T0SKm3p~6kJJ0G71PLkP560PKVzwt8F6AM3Ep9ZsMpl7W-vMCs6pcO25kBEMxEukPkNB0~LHvUbLdPkYeQZhNkokeKBlU0r-0mG4dT2V95zOVP1Zq-k0TiC--1vk1o-I9RU1dSI2I9mxVTspcSNuLFn2j5BgvZUPNNj7JhwNJ3edXgxtU-GjfKqInV1vfAqtK06rtKxFPdne0V6Ln2PUDpoPiNi1TAiRO9rUH3xxoynOlIuHuFA__',
+          uri: product?.cover,
         }}
         imageOverlay={<Box background={util.toAlpha(colors.dark, 40)} />}
         foreground={
           <Box hasPadding justify="flex-end">
             <Title bold color="light" variant="big">
-              R$1080
+              R${product?.price}
             </Title>
           </Box>
         }
       >
         <Box hasPadding background="light">
-          <Text color="black">Shirts</Text>
+          <Text color="black">{product?.type}</Text>
           <Spacer size="20px" />
-          <Title color="black">A.P.C. Collection Spring 2015</Title>
+          <Title color="black">{product?.title}</Title>
           <Spacer size="30px" />
           <Text color="dark">
-            Enjoy the beauty of italian cotton all over your body. This item
-            will fit your body and warm you up all over and during spring. This
-            item will fit your body and warm you up all over and during spring.
+           {product?.description}
           </Text>
           <Spacer size="30px" />
-          <Picker options={[
-            {label: 'P', value: 'P'},
-            {label: 'M', value: 'M'},
-            {label: 'G', value: 'G'},
-            {label: 'XG', value: 'XG'},
-          ]}
-          onChange={(value) => alert(value)}
-            initialValue="M"
+          <Picker options={product?.sizes}
+          onChange={(value) => setSize(value)}
+            initialValue={product?.sizes[0]?.value}
             title="Size"
           />
           <Spacer size="30px" />

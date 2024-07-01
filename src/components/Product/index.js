@@ -9,7 +9,7 @@ const Product = ({ product, selected = false }) => {
 
   return (
     <Touchable
-      onPress={() => navigate('Product')}
+      onPress={() => navigate('Product', { product })}
       hasPadding={!selected}
       row
       background="light"

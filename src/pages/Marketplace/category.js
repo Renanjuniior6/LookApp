@@ -51,7 +51,7 @@ const Category = ({route, navigation}) => {
    <>
    <Header title={category?.title} right={() => (
           <Touchable hasPadding width="80px">
-            <Icon name="bag" size={20} color="#000" />
+            <Icon name="bag" size={20} color="#000" onPress={() => navigation.navigate('Cart')}/>
           </Touchable>
         )}
         />
