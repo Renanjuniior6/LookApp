@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable react/no-unstable-nested-components */
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { StretchyScrollView } from 'react-native-stretchy';
 
 import { Touchable, Box, Title, Text, Spacer, Button } from '../../components';
@@ -9,10 +9,12 @@ import Picker from '../../components/Picker';
 import Icon from 'react-native-vector-icons/SimpleLineIcons';
 import { colors } from '../../styles/theme.json';
 import util from '../../util';
+import { AppContext } from '../../contexts/app';
 
 const Product = ({navigation, route}) => {
 
   const { product } = route?.params;
+  const { addToCart, cart } = useContext(AppContext);
   const [size, setSize] = useState();
 
   useEffect(() => {
@@ -58,7 +60,10 @@ const Product = ({navigation, route}) => {
             title="Size"
           />
           <Spacer size="30px" />
-          <Button block>
+          <Button block onPress={() => {
+            addToCart({...product, size});
+            navigation.navigate('Cart');
+          }}>
             <Text color="light">Add to cart</Text>
           </Button>
         </Box>

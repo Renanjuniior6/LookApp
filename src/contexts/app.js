@@ -23,12 +23,13 @@ const ContextProvider = ({ children }) => {
     setCart(oldCart);
   };
 
-  const removeFromCart = () => {
-
+  const removeFromCart = (productId) => {
+    const filteredProducts = cart?.filter(p => p.id !== productId);
+    setCart(filteredProducts);
   };
 
   return (
-    <AppContext.Provider value={{ user, setUser, addToCart }}>
+    <AppContext.Provider value={{ user, setUser, addToCart, cart, removeFromCart }}>
       {children}
     </AppContext.Provider>
   );

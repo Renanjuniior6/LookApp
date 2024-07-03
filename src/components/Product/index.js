@@ -1,15 +1,33 @@
 /* eslint-disable prettier/prettier */
-import React from 'react';
+/* eslint-disable react-native/no-inline-styles */
+import React, { useContext } from 'react';
 import { useNavigation } from '@react-navigation/native';
+import { Alert } from 'react-native';
 
 import { Text, Box, Touchable, Spacer, Cover } from '../index';
 
+import { AppContext } from '../../contexts/app';
+
 const Product = ({ product, selected = false }) => {
   const { navigate } = useNavigation();
+  const { removeFromCart } = useContext(AppContext);
 
   return (
     <Touchable
-      onPress={() => navigate('Product', { product })}
+      onPress={() => {
+        if(!selected) {
+          navigate('Product', { product });
+        } else {
+          Alert.alert(
+            'Sure about that?',
+            'This product will be removed from your cart',
+            [
+              {text: 'Cancel', style: 'cancel'},
+              {text: 'Remove', style: 'destructive', onPress: () => removeFromCart(product?.id)},
+            ]
+          );
+        }
+      }}
       hasPadding={!selected}
       row
       background="light"
@@ -24,7 +42,7 @@ const Product = ({ product, selected = false }) => {
         <Spacer />
         {selected && (
           <Box>
-            <Text color="dark">Size: GG</Text>
+            <Text color="dark">Size: {product?.size}</Text>
           </Box>
         )}
         <Box row width="100%" justify="space-between">
