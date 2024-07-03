@@ -147,17 +147,8 @@
       "id": "2"
     },
     {
-      "step": "waiting",
-      "createdAt": "2022-04-22T12:29:54-03:00",
-      "orderNumber": 1650641359165,
-      "trackingNumber": 1650641394273,
-      "totalValue": 1079.2,
-      "totalItems": 1,
-      "id": "3"
-    },
-    {
-      "userId": 3,
-      "step": "delivered",
+      "userId": "97bb",
+      "step": "canceled",
       "createdAt": "2022-04-22T12:43:33-03:00",
       "orderNumber": 1650641635100,
       "trackingNumber": 1650642213295,
@@ -168,7 +159,7 @@
     {
       "id": "cd04",
       "userId": "97bb",
-      "step": "waiting",
+      "step": "delivered",
       "createdAt": "2024-07-03T15:11:29-03:00",
       "orderNumber": 1720029465124,
       "trackingNumber": 1720030289360,
@@ -182,6 +173,16 @@
       "createdAt": "2024-07-03T16:05:59-03:00",
       "orderNumber": 1720033336795,
       "trackingNumber": 1720033559843,
+      "totalValue": 2260,
+      "totalItems": 1
+    },
+    {
+      "id": "5d68",
+      "userId": "97bb",
+      "step": "waiting",
+      "createdAt": "2024-07-03T19:58:21-03:00",
+      "orderNumber": 1720047465369,
+      "trackingNumber": 1720047501519,
       "totalValue": 2260,
       "totalItems": 1
     }

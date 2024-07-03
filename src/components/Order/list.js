@@ -4,11 +4,11 @@ import { ScrollView } from '../index';
 
 import OrderITem from '.';
 
-const OrderList = () => {
+const OrderList = ({orders}) => {
   return (
     <ScrollView fluid background="light" hasPadding>
-      {Array.from(Array(3))?.map((item) => (
-        <OrderITem />
+      {orders?.map((order) => (
+        <OrderITem order={order}/>
       ))}
     </ScrollView>
   );
