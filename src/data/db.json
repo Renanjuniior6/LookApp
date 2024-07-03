@@ -164,6 +164,26 @@
       "totalValue": 2485,
       "totalItems": 1,
       "id": "4"
+    },
+    {
+      "id": "cd04",
+      "userId": "97bb",
+      "step": "waiting",
+      "createdAt": "2024-07-03T15:11:29-03:00",
+      "orderNumber": 1720029465124,
+      "trackingNumber": 1720030289360,
+      "totalValue": 982,
+      "totalItems": 1
+    },
+    {
+      "id": "6664",
+      "userId": "97bb",
+      "step": "waiting",
+      "createdAt": "2024-07-03T16:05:59-03:00",
+      "orderNumber": 1720033336795,
+      "trackingNumber": 1720033559843,
+      "totalValue": 2260,
+      "totalItems": 1
     }
   ]
 }

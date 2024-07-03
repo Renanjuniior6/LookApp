@@ -1,10 +1,13 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-
+import { useNavigation } from '@react-navigation/native';
 import { Box, Text, Title, Spacer, Button, Cover } from '../';
 
 const CongratsModal = () => {
+
+  const { navigate } = useNavigation();
+
   return (
     <Box
       background="light"
@@ -30,7 +33,7 @@ const CongratsModal = () => {
       <Text>Your items are on the way</Text>
       <Text>and should arrive shortly</Text>
       <Spacer size="50px" />
-      <Button block onPress={() => {}}>
+      <Button block onPress={() => navigate('Orders')}>
         <Text color="light">Track your order</Text>
       </Button>
     </Box>
