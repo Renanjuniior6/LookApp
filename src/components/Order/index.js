@@ -66,7 +66,7 @@ const OrderITem = ({order}) => {
           VALUE OF ITEMS: <Text color="dark">R$ {order?.totalValue.toFixed(2)}</Text>
         </Text>
         <Text>
-          QUANITY: <Text color="dark">{order?.totalItems}</Text>
+          QUANTITY: <Text color="dark">{order?.totalItems}</Text>
         </Text>
       </Box>
     </Box>

@@ -6,11 +6,13 @@ import OrderITem from '.';
 
 const OrderList = ({orders}) => {
   return (
-    <ScrollView fluid background="light" hasPadding>
+    <>
+    <ScrollView fluid background="light" hasPadding >
       {orders?.map((order) => (
-        <OrderITem order={order}/>
+        <OrderITem key={order.id} order={order}/>
       ))}
     </ScrollView>
+    </>
   );
 };
 

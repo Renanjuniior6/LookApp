@@ -1,4 +1,5 @@
 /* eslint-disable prettier/prettier */
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import { Box, Text, ScrollView } from '../index';
 import Story from '.';
@@ -16,7 +17,7 @@ const StoryList = ({stories}) => {
       </Box>
       <ScrollView horizontal style={{ paddingLeft: 20 }}>
         {stories?.map((story) => (
-          <Story story={story}/>
+          <Story key={story.id} story={story}/>
         ))}
       </ScrollView>
     </Box>

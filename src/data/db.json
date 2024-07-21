@@ -35,6 +35,42 @@
           "photo": "https://picsum.photos/50"
         },
         "createdAt": "2022-04-21T12:32"
+      },
+      {
+        "id": 2,
+        "cover": "https://picsum.photos/550",
+        "owner": {
+          "username": "John",
+          "photo": "https://picsum.photos/40"
+        },
+        "createdAt": "2022-04-21T12:32"
+      },
+      {
+        "id": 3,
+        "cover": "https://picsum.photos/560",
+        "owner": {
+          "username": "Marta",
+          "photo": "https://picsum.photos/20"
+        },
+        "createdAt": "2022-04-21T12:32"
+      },
+      {
+        "id": 4,
+        "cover": "https://picsum.photos/570",
+        "owner": {
+          "username": "Kelly",
+          "photo": "https://picsum.photos/10"
+        },
+        "createdAt": "2022-04-21T12:32"
+      },
+      {
+        "id": 5,
+        "cover": "https://picsum.photos/580",
+        "owner": {
+          "username": "Paul",
+          "photo": "https://picsum.photos/5"
+        },
+        "createdAt": "2022-04-21T12:32"
       }
     ],
     "posts": [
@@ -52,8 +88,84 @@
           "description": "Liked by 10,098"
         },
         "owner": {
-          "username": "teste123",
+          "username": "Lisa",
           "photo": "https://picsum.photos/50"
+        },
+        "createdAt": "2022-04-21T12:32"
+      },
+      {
+        "id": 2,
+        "cover": "https://picsum.photos/401",
+        "description": "Interview: Shoe Designer John Fluevog On New Book, Spirituality And ‘Slow Fashion’",
+        "isLiked": true,
+        "likeInfos": {
+          "photos": [
+            "https://picsum.photos/54",
+            "https://picsum.photos/55",
+            "https://picsum.photos/56"
+          ],
+          "description": "Liked by 108"
+        },
+        "owner": {
+          "username": "Buck",
+          "photo": "https://picsum.photos/30"
+        },
+        "createdAt": "2022-04-21T12:32"
+      },
+      {
+        "id": 3,
+        "cover": "https://picsum.photos/402",
+        "description": "Interview: Shoe Designer John Fluevog On New Book, Spirituality And ‘Slow Fashion’",
+        "isLiked": true,
+        "likeInfos": {
+          "photos": [
+            "https://picsum.photos/57",
+            "https://picsum.photos/58",
+            "https://picsum.photos/59"
+          ],
+          "description": "Liked by 1,278"
+        },
+        "owner": {
+          "username": "Carl",
+          "photo": "https://picsum.photos/31"
+        },
+        "createdAt": "2022-04-21T12:32"
+      },
+      {
+        "id": 4,
+        "cover": "https://picsum.photos/403",
+        "description": "Interview: Shoe Designer John Fluevog On New Book, Spirituality And ‘Slow Fashion’",
+        "isLiked": true,
+        "likeInfos": {
+          "photos": [
+            "https://picsum.photos/60",
+            "https://picsum.photos/61",
+            "https://picsum.photos/62"
+          ],
+          "description": "Liked by 1,200"
+        },
+        "owner": {
+          "username": "Marina",
+          "photo": "https://picsum.photos/32"
+        },
+        "createdAt": "2022-04-21T12:32"
+      },
+      {
+        "id": 5,
+        "cover": "https://picsum.photos/404",
+        "description": "Interview: Shoe Designer John Fluevog On New Book, Spirituality And ‘Slow Fashion’",
+        "isLiked": true,
+        "likeInfos": {
+          "photos": [
+            "https://picsum.photos/63",
+            "https://picsum.photos/64",
+            "https://picsum.photos/65"
+          ],
+          "description": "Liked by 900"
+        },
+        "owner": {
+          "username": "Luiza",
+          "photo": "https://picsum.photos/33"
         },
         "createdAt": "2022-04-21T12:32"
       }
@@ -62,9 +174,57 @@
   "categories": [
     {
       "id": "1",
-      "cover": "https://picsum.photos/499",
+      "cover": "https://picsum.photos/200",
       "title": "Womans",
       "items": 1232
+    },
+    {
+      "id": "2",
+      "cover": "https://picsum.photos/201",
+      "title": "Men",
+      "items": 6798
+    },
+    {
+      "id": "3",
+      "cover": "https://picsum.photos/202",
+      "title": "Boys",
+      "items": 3453
+    },
+    {
+      "id": "4",
+      "cover": "https://picsum.photos/203",
+      "title": "Girl",
+      "items": 1256
+    },
+    {
+      "id": "5",
+      "cover": "https://picsum.photos/204",
+      "title": "Womans",
+      "items": 7890
+    },
+    {
+      "id": "6",
+      "cover": "https://picsum.photos/205",
+      "title": "Summer",
+      "items": 4567
+    },
+    {
+      "id": "7",
+      "cover": "https://picsum.photos/206",
+      "title": "Winter",
+      "items": 2234
+    },
+    {
+      "id": "8",
+      "cover": "https://picsum.photos/207",
+      "title": "Autumn",
+      "items": 1278
+    },
+    {
+      "id": "9",
+      "cover": "https://picsum.photos/208",
+      "title": "Spring",
+      "items": 8765
     }
   ],
   "products": [
@@ -173,16 +333,6 @@
       "createdAt": "2024-07-03T16:05:59-03:00",
       "orderNumber": 1720033336795,
       "trackingNumber": 1720033559843,
-      "totalValue": 2260,
-      "totalItems": 1
-    },
-    {
-      "id": "5d68",
-      "userId": "97bb",
-      "step": "waiting",
-      "createdAt": "2024-07-03T19:58:21-03:00",
-      "orderNumber": 1720047465369,
-      "trackingNumber": 1720047501519,
       "totalValue": 2260,
       "totalItems": 1
     }

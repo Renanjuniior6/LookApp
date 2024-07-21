@@ -40,7 +40,7 @@ const Product = ({navigation, route}) => {
         foreground={
           <Box hasPadding justify="flex-end">
             <Title bold color="light" variant="big">
-              R${product?.price}
+              $ {product?.price.toFixed(2)}
             </Title>
           </Box>
         }

@@ -39,7 +39,7 @@ const Header = ({ title = 'Explore', right = null, goBack = false }) => {
           <Icon name={!goBack ? 'menu' : 'arrow-left'} size={18} color="#000" />
         </Touchable>
         <Box align="center" justify="center">
-          <Title>{title}</Title>
+          <Title variant="small">{title}</Title>
         </Box>
         {right ? right() : <Touchable hasPadding width="70px" />}
       </SafeAreaView>

@@ -13,7 +13,7 @@ const CategoryList = ({categories}) => {
         paddingRight: 20,
     }}>
       {categories?.map((category) => (
-        <Category category={category}/>
+        <Category key={category.id} category={category}/>
       ))}
     </ScrollView>
   );

@@ -1,4 +1,5 @@
 /* eslint-disable prettier/prettier */
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react';
 import { StyleSheet } from 'react-native';
 
@@ -26,6 +27,7 @@ const Picker = ({
       <Box row fluid height="50px">
         {options?.map((opt) => (
           <Touchable
+            key={opt.id}
             onPress={() => {
               setSelected(opt?.value);
               onChange(opt?.value);

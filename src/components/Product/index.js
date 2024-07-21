@@ -46,7 +46,7 @@ const Product = ({ product, selected = false }) => {
           </Box>
         )}
         <Box row width="100%" justify="space-between">
-          <Text color="dark">{product?.price}</Text>
+          <Text color="dark">$ {product?.price.toFixed(2)}</Text>
           <Text color="danger">{selected ? 'remove' : 'Add to cart'}</Text>
         </Box>
       </Box>

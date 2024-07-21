@@ -1,4 +1,5 @@
 /* eslint-disable prettier/prettier */
+/* eslint-disable react/no-unstable-nested-components */
 import 'react-native-gesture-handler';
 import React from 'react';
 

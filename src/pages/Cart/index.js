@@ -106,27 +106,27 @@ const Cart = () => {
             {tab === 'cart' && (
               <>
                 {cart?.map((product) => (
-                  <Product product={product} selected />
+                  <Product key={product.id} product={product} selected />
                 ))}
                 <Spacer size="50px" />
                 <Box row width="100%" height="30px" justify="space-between">
                   <Text color="dark">Order:</Text>
-                  <Text color="dark">R$ {orderPrice.toFixed(2)}</Text>
+                  <Text color="dark">$ {orderPrice.toFixed(2)}</Text>
                 </Box>
                 <Box row width="100%" height="30px" justify="space-between">
                   <Text color="dark">Discount:</Text>
-                  <Text color="secondary">R$ -{totalDiscount}</Text>
+                  <Text color="secondary">$ -{totalDiscount}</Text>
                 </Box>
                 <Box row width="100%" height="30px" justify="space-between">
                   <Text color="dark">Delivery:</Text>
-                  <Text color="dark">R$ {DELIVERY_TAX.toFixed(2)}</Text>
+                  <Text color="dark">$ {DELIVERY_TAX.toFixed(2)}</Text>
                 </Box>
                 <Box row width="100%" height="30px" justify="space-between">
                   <Text color="dark" bold>
                     Total order:
                   </Text>
                   <Text color="dark" bold>
-                    R$ {totalOrderPrice.toFixed(2)}
+                    $ {totalOrderPrice.toFixed(2)}
                   </Text>
                 </Box>
                 <Spacer size="50px" />
@@ -184,7 +184,7 @@ const Cart = () => {
                 <Spacer />
                 <Text color="dark">Standard Delivery</Text>
                 <Text color="dark">Saturday 27 - Tuesday 30</Text>
-                <Text color="dark">Cost: $10</Text>
+                <Text color="dark">Cost: $10.00</Text>
                 <Spacer size="30px" />
                 <PaymentForm
                   onChange={(creditCardData) => setCreditCart(creditCardData)}
