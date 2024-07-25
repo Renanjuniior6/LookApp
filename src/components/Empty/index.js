@@ -22,7 +22,7 @@ const Empty = ({ loading = false, message = '' }) => {
         <Spacer size="20px"/>
         </>
       )}
-      <Title variant="small">{loading ? 'Carregando...' : message}</Title>
+      <Title variant="small">{loading ? '' : message}</Title>
     </Box>
   );
 };
