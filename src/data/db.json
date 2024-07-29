@@ -29,46 +29,46 @@
     "stories": [
       {
         "id": 1,
-        "cover": "https://picsum.photos/500",
+        "cover": "https://th.bing.com/th/id/OIP.MGNpBBQuJq7uYMfzXume3wAAAA?rs=1&pid=ImgDetMain",
         "owner": {
-          "username": "teste123",
-          "photo": "https://picsum.photos/50"
+          "username": "Lara",
+          "photo": "https://www.okchicas.com/wp-content/uploads/2018/01/Poses-para-una-buena-foto-de-perfil-15-1.jpg"
         },
         "createdAt": "2022-04-21T12:32"
       },
       {
         "id": 2,
-        "cover": "https://picsum.photos/550",
+        "cover": "https://static.stealthelook.com.br/wp-content/uploads/2023/01/tudo-que-voce-precisa-saber-sobre-a-semana-de-moda-de-alta-costura-20232024-schiaparelli-20230117193216.jpg", 
         "owner": {
-          "username": "John",
-          "photo": "https://picsum.photos/40"
+          "username": "Daphine",
+          "photo": "https://iv1.lisimg.com/image/10026790/640full-claudia-sulewski.jpg"
         },
         "createdAt": "2022-04-21T12:32"
       },
       {
         "id": 3,
-        "cover": "https://picsum.photos/560",
+        "cover": "https://i.pinimg.com/originals/f3/0a/02/f30a0226b5876a36fcbba26a086b887c.jpg",
         "owner": {
           "username": "Marta",
-          "photo": "https://picsum.photos/20"
+          "photo": "https://iv1.lisimg.com/image/10026985/640full-claudia-sulewski.jpg"
         },
         "createdAt": "2022-04-21T12:32"
       },
       {
         "id": 4,
-        "cover": "https://picsum.photos/570",
+        "cover": "https://th.bing.com/th/id/OIP.3FUH4Iki1qK34SWHdQMCWgHaLI?rs=1&pid=ImgDetMain",
         "owner": {
           "username": "Kelly",
-          "photo": "https://picsum.photos/10"
+          "photo": "https://i.pinimg.com/originals/28/e5/9a/28e59a3e7c7caa34d3c93442b832c74f.jpg"
         },
         "createdAt": "2022-04-21T12:32"
       },
       {
         "id": 5,
-        "cover": "https://picsum.photos/580",
+        "cover": "https://i.pinimg.com/originals/25/10/b7/2510b70887cb47c6863898031a3ceff4.jpg",
         "owner": {
-          "username": "Paul",
-          "photo": "https://picsum.photos/5"
+          "username": "Katarine",
+          "photo": "https://i.pinimg.com/originals/1c/3d/2c/1c3d2c2e9ce9f9f23921e36864ecf21b.jpg"
         },
         "createdAt": "2022-04-21T12:32"
       }
@@ -76,7 +76,7 @@
     "posts": [
       {
         "id": 1,
-        "cover": "https://picsum.photos/400",
+        "cover": "https://www.amica.it/wp-content/uploads/2022/09/new-york-fashion-week-primavera-estate-2023-slider.jpg",
         "description": "Interview: Shoe Designer John Fluevog On New Book, Spirituality And ‘Slow Fashion’",
         "isLiked": true,
         "likeInfos": {
@@ -95,7 +95,7 @@
       },
       {
         "id": 2,
-        "cover": "https://picsum.photos/401",
+        "cover": "https://cdn-0.somosmamas.com.ar/wp-content/uploads/2017/05/como-combinar-ropa-de-mujer-colores.jpg",
         "description": "Interview: Shoe Designer John Fluevog On New Book, Spirituality And ‘Slow Fashion’",
         "isLiked": true,
         "likeInfos": {
@@ -107,14 +107,14 @@
           "description": "Liked by 108"
         },
         "owner": {
-          "username": "Buck",
+          "username": "Martine",
           "photo": "https://picsum.photos/30"
         },
         "createdAt": "2022-04-21T12:32"
       },
       {
         "id": 3,
-        "cover": "https://picsum.photos/402",
+        "cover": "https://th.bing.com/th/id/OIP.DZmTnmJ-BrYsKkayw9WTKgAAAA?rs=1&pid=ImgDetMain",
         "description": "Interview: Shoe Designer John Fluevog On New Book, Spirituality And ‘Slow Fashion’",
         "isLiked": true,
         "likeInfos": {
@@ -126,14 +126,14 @@
           "description": "Liked by 1,278"
         },
         "owner": {
-          "username": "Carl",
+          "username": "Pheabe",
           "photo": "https://picsum.photos/31"
         },
         "createdAt": "2022-04-21T12:32"
       },
       {
         "id": 4,
-        "cover": "https://picsum.photos/403",
+        "cover": "https://th.bing.com/th/id/R.735108e9a687e0890659793bfffb9180?rik=ghqnbhfWhecA6A&riu=http%3a%2f%2fwww.fashionradicals.com%2fwp-content%2fuploads%2f2016%2f05%2fel_arte_de_la_indumentaria_y_la_moda_en_mexico_526655747_1300x867.jpg&ehk=FqaGxHhxTcV4DNbo%2boNZUgCXGIAk3xRtjfgoZWH%2blVA%3d&risl=&pid=ImgRaw&r=0",
         "description": "Interview: Shoe Designer John Fluevog On New Book, Spirituality And ‘Slow Fashion’",
         "isLiked": true,
         "likeInfos": {
@@ -152,7 +152,7 @@
       },
       {
         "id": 5,
-        "cover": "https://picsum.photos/404",
+        "cover": "https://media.ahora.com.ar/p/db4f6b854ee4ba0702831f1d1077e636/adjuntos/224/imagenes/003/549/0003549670/790x0/smart/moda-2jpeg.jpeg",
         "description": "Interview: Shoe Designer John Fluevog On New Book, Spirituality And ‘Slow Fashion’",
         "isLiked": true,
         "likeInfos": {
@@ -174,55 +174,49 @@
   "categories": [
     {
       "id": "1",
-      "cover": "https://picsum.photos/200",
+      "cover": "https://cdn05.zipify.com/GIi1yL00hXXAaM4BEhkLpsviGNI=/0x367:2938x3305/fit-in/540x0/e97ae010a40742b786650e88309631b0/pexels-risz-amin-3513417.jpeg",
       "title": "Womans",
       "items": 1232
     },
     {
       "id": "2",
-      "cover": "https://picsum.photos/201",
+      "cover": "https://blogger.googleusercontent.com/img/a/AVvXsEjfI4nePb19VpcOYn_mm0CIXtuRkDGxvKXgH_dM0GI0esE64dVEO65jCqwYjpo3YE2Dyb7aqXy1WQG6D13fsApNqqSoepCmSq3yIQPFdfzYNVpqwEuMmdWY1oQ0xIF5YGWaUduxQoyZh3i4vQH47Xdcly62a93i-s3LZjDkGBOwCAPIt2FOK7gw1vf-=s16000-rw",
       "title": "Men",
       "items": 6798
     },
     {
       "id": "3",
-      "cover": "https://picsum.photos/202",
+      "cover": "https://www.teenidols4you.com/blink/Actors/alex-ruygrok/alex-ruygrok-1577557419.jpg",
       "title": "Boys",
       "items": 3453
     },
     {
       "id": "4",
-      "cover": "https://picsum.photos/203",
+      "cover": "https://cdn11.bigcommerce.com/s-ox1rtno/images/stencil/332x400/products/13919/42329/BG124D13_01__20868.1706154069.jpg?c=2",
       "title": "Girl",
       "items": 1256
     },
     {
       "id": "5",
-      "cover": "https://picsum.photos/204",
-      "title": "Womans",
-      "items": 7890
-    },
-    {
-      "id": "6",
-      "cover": "https://picsum.photos/205",
+      "cover": "https://th.bing.com/th/id/R.31e1034b8daa42b27e6eeb9f5cb79a69?rik=0gAEk8NXEbpgHQ&riu=http%3a%2f%2fimage27.stylesimo.com%2fo_img%2f2018%2f06%2f04%2f255181-10549949%2fsummer-casual-floral-printed-lace-splicing-strappy-v-neck-midi-dress.jpg&ehk=AuYHEsZZGEqfyNf5HxCqKcO%2bJJRllalmclWIib53opg%3d&risl=&pid=ImgRaw&r=0",
       "title": "Summer",
       "items": 4567
     },
     {
-      "id": "7",
-      "cover": "https://picsum.photos/206",
+      "id": "6",
+      "cover": "https://th.bing.com/th/id/OIP._2-Srxythso7p7be5GJPXAAAAA?rs=1&pid=ImgDetMain",
       "title": "Winter",
       "items": 2234
     },
     {
-      "id": "8",
-      "cover": "https://picsum.photos/207",
+      "id": "7",
+      "cover": "https://www.outfittrends.com/wp-content/uploads/2016/10/19-1.jpg",
       "title": "Autumn",
       "items": 1278
     },
     {
-      "id": "9",
-      "cover": "https://picsum.photos/208",
+      "id": "8",
+      "cover": "https://i.pinimg.com/originals/d7/26/37/d726376c950dddaeee6e4d88bc881d98.jpg",
       "title": "Spring",
       "items": 8765
     }
@@ -231,9 +225,9 @@
     {
       "id": "1",
       "title": "Large striped cardigan",
-      "price": 1080,
+      "price": 80,
       "brand": "Raf Simons",
-      "cover": "https://picsum.photos/490",
+      "cover": "https://down-br.img.susercontent.com/file/sg-11134201-7rceq-lt2tx87efetwe5",
       "categoryId": 1,
       "type": "Shirts",
       "description": "Enjoy the beauty of italian cotton all over your body. This item will fit your body and warm you up all over and during spring. This item will fit your body and warm you up all over and during spring.  And over and over again, this is the text.",
@@ -259,9 +253,9 @@
     {
       "id": "2",
       "title": "Large shirt",
-      "price": 890,
+      "price": 90,
       "brand": "Gucci",
-      "cover": "https://picsum.photos/24",
+      "cover": "https://down-br.img.susercontent.com/file/sg-11134201-7rcf1-lsaak5xu7z9jff",
       "categoryId": 2,
       "type": "Shirts",
       "description": "Enjoy the beauty of italian cotton all over your body. This item will fit your body and warm you up all over and during spring. This item will fit your body and warm you up all over and during spring.  And over and over again, this is the text.",
@@ -286,12 +280,12 @@
     },
     {
       "id": "3",
-      "title": "Jeans Leg",
-      "price": 2520,
+      "title": "Shirts Brown",
+      "price": 20,
       "brand": "Luly",
-      "cover": "https://picsum.photos/498", 
+      "cover": "https://down-br.img.susercontent.com/file/sg-11134201-7rcd3-lt2ty5f9teg4b0", 
       "categoryId": 1,
-      "type": "Legs",
+      "type": "Shirts",
       "description": "Enjoy the beauty of italian cotton all over your body. This item will fit your body and warm you up all over and during spring. This item will fit your body and warm you up all over and during spring.  And over and over again, this is the text.",
       "sizes": [
         {
@@ -314,12 +308,12 @@
     },
     {
       "id": "4",
-      "title": "Nice Jeans",
-      "price": 120,
+      "title": "Shirts Purple",
+      "price": 35,
       "brand": "Comic",
-      "cover": "https://picsum.photos/491", 
+      "cover": "https://down-br.img.susercontent.com/file/sg-11134201-7rccw-lt2ty5fjszf943", 
       "categoryId": 1,
-      "type": "Socks",
+      "type": "Shirts",
       "description": "Enjoy the beauty of italian cotton all over your body. This item will fit your body and warm you up all over and during spring. This item will fit your body and warm you up all over and during spring.  And over and over again, this is the text.",
       "sizes": [
         {
@@ -342,12 +336,12 @@
     },
     {
       "id": "5",
-      "title": "Gucci Balaclava",
-      "price": 2500,
-      "brand": "Gucci",
-      "cover": "https://picsum.photos/480",
+      "title": "Clothe set",
+      "price": 20,
+      "brand": "Choices",
+      "cover": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lwd83hpp6a455a",
       "categoryId": 1,
-      "type": "Balaclava",
+      "type": "set",
       "description": "Enjoy the beauty of italian cotton all over your body. This item will fit your body and warm you up all over and during spring. This item will fit your body and warm you up all over and during spring.  And over and over again, this is the text.",
       "sizes": [
         {
@@ -370,10 +364,10 @@
     },
     {
       "id": "6",
-      "title": "Polo",
-      "price": 250,
-      "brand": "Skin",
-      "cover": "https://picsum.photos/495", 
+      "title": "Shirt Polo",
+      "price": 50,
+      "brand": "ModaH2",
+      "cover": "https://down-br.img.susercontent.com/file/sg-11134201-7rcds-lsaak53bgnomd7", 
       "categoryId": 2,
       "type": "Shirts",
       "description": "Enjoy the beauty of italian cotton all over your body. This item will fit your body and warm you up all over and during spring. This item will fit your body and warm you up all over and during spring.  And over and over again, this is the text.",
@@ -398,12 +392,12 @@
     },
     {
       "id": "7",
-      "title": "Polo",
+      "title": "White Pants",
       "price": 250,
-      "brand": "Skin",
-      "cover": "https://picsum.photos/495", 
+      "brand": "Skinner",
+      "cover": "https://down-br.img.susercontent.com/file/br-11134207-7qukw-lfr93p7xda4f4d", 
       "categoryId": 1,
-      "type": "Shirts",
+      "type": "Pants",
       "description": "Enjoy the beauty of italian cotton all over your body. This item will fit your body and warm you up all over and during spring. This item will fit your body and warm you up all over and during spring.  And over and over again, this is the text.",
       "sizes": [
         {
@@ -426,12 +420,12 @@
     },
     {
       "id": "8",
-      "title": "Polo",
-      "price": 250,
-      "brand": "Skin",
-      "cover": "https://picsum.photos/495", 
+      "title": "Green Pants",
+      "price": 110,
+      "brand": "Gold",
+      "cover": "https://down-br.img.susercontent.com/file/br-11134207-7qukw-lk0ijjk1syzq97", 
       "categoryId": 1,
-      "type": "Shirts",
+      "type": "Pants",
       "description": "Enjoy the beauty of italian cotton all over your body. This item will fit your body and warm you up all over and during spring. This item will fit your body and warm you up all over and during spring.  And over and over again, this is the text.",
       "sizes": [
         {
@@ -454,12 +448,12 @@
     },
     {
       "id": "9",
-      "title": "Polo",
+      "title": "beige Pants",
       "price": 250,
-      "brand": "Skin",
-      "cover": "https://picsum.photos/495", 
+      "brand": "GGLing",
+      "cover": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lwd83hpp939176", 
       "categoryId": 1,
-      "type": "Shirts",
+      "type": "Pants",
       "description": "Enjoy the beauty of italian cotton all over your body. This item will fit your body and warm you up all over and during spring. This item will fit your body and warm you up all over and during spring.  And over and over again, this is the text.",
       "sizes": [
         {
@@ -482,12 +476,12 @@
     },
     {
       "id": "10",
-      "title": "Polo",
-      "price": 250,
-      "brand": "Skin",
-      "cover": "https://picsum.photos/495", 
+      "title": "Black Dress",
+      "price": 50,
+      "brand": "Bingua",
+      "cover": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lrq7ewm3alh7bb", 
       "categoryId": 1,
-      "type": "Shirts",
+      "type": "Dress",
       "description": "Enjoy the beauty of italian cotton all over your body. This item will fit your body and warm you up all over and during spring. This item will fit your body and warm you up all over and during spring.  And over and over again, this is the text.",
       "sizes": [
         {
@@ -510,12 +504,12 @@
     },
     {
       "id": "11",
-      "title": "Polo",
-      "price": 250,
+      "title": "Green Dress",
+      "price": 70,
       "brand": "Skin",
-      "cover": "https://picsum.photos/495", 
+      "cover": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-ltlavarhkl6g15", 
       "categoryId": 1,
-      "type": "Shirts",
+      "type": "Dress",
       "description": "Enjoy the beauty of italian cotton all over your body. This item will fit your body and warm you up all over and during spring. This item will fit your body and warm you up all over and during spring.  And over and over again, this is the text.",
       "sizes": [
         {
@@ -541,7 +535,7 @@
       "title": "Polo",
       "price": 250,
       "brand": "Skin",
-      "cover": "https://picsum.photos/495", 
+      "cover": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lx5vaphp0hq7d7", 
       "categoryId": 1,
       "type": "Shirts",
       "description": "Enjoy the beauty of italian cotton all over your body. This item will fit your body and warm you up all over and during spring. This item will fit your body and warm you up all over and during spring.  And over and over again, this is the text.",
@@ -566,10 +560,10 @@
     },
     {
       "id": "13",
-      "title": "Polo",
+      "title": "Jh for",
       "price": 250,
-      "brand": "Skin",
-      "cover": "https://picsum.photos/495", 
+      "brand": "Amani",
+      "cover": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lxlpnwr2ggqn8e", 
       "categoryId": 1,
       "type": "Shirts",
       "description": "Enjoy the beauty of italian cotton all over your body. This item will fit your body and warm you up all over and during spring. This item will fit your body and warm you up all over and during spring.  And over and over again, this is the text.",
@@ -597,7 +591,7 @@
       "title": "Polo",
       "price": 250,
       "brand": "Skin",
-      "cover": "https://picsum.photos/495", 
+      "cover": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lw212p4y1fgyf7", 
       "categoryId": 1,
       "type": "Shirts",
       "description": "Enjoy the beauty of italian cotton all over your body. This item will fit your body and warm you up all over and during spring. This item will fit your body and warm you up all over and during spring.  And over and over again, this is the text.",
@@ -619,7 +613,176 @@
           "value": "XG"
         }
       ]
+    },
+    {
+      "id": "15",
+      "title": "White Shirt",
+      "price": 70,
+      "brand": "PanMx",
+      "cover": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lum3ueliuq38c2", 
+      "categoryId": 2,
+      "type": "Shirts",
+      "description": "Enjoy the beauty of italian cotton all over your body. This item will fit your body and warm you up all over and during spring. This item will fit your body and warm you up all over and during spring.  And over and over again, this is the text.",
+      "sizes": [
+        {
+          "label": "P",
+          "value": "P"
+        },
+        {
+          "label": "M",
+          "value": "M"
+        },
+        {
+          "label": "G",
+          "value": "G"
+        },
+        {
+          "label": "XG",
+          "value": "XG"
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "title": "Black Shirt",
+      "price": 68,
+      "brand": "PanMh",
+      "cover": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lum3ueliyxsk15", 
+      "categoryId": 2,
+      "type": "Shirts",
+      "description": "Enjoy the beauty of italian cotton all over your body. This item will fit your body and warm you up all over and during spring. This item will fit your body and warm you up all over and during spring.  And over and over again, this is the text.",
+      "sizes": [
+        {
+          "label": "P",
+          "value": "P"
+        },
+        {
+          "label": "M",
+          "value": "M"
+        },
+        {
+          "label": "G",
+          "value": "G"
+        },
+        {
+          "label": "XG",
+          "value": "XG"
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "title": "Coat Black",
+      "price": 120,
+      "brand": "Robles",
+      "cover": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-luxsfpunjpeoa7",
+      "categoryId": 2,
+      "type": "Coats",
+      "description": "Enjoy the beauty of italian cotton all over your body. This item will fit your body and warm you up all over and during spring. This item will fit your body and warm you up all over and during spring.  And over and over again, this is the text.",
+      "sizes": [
+        {
+          "label": "P",
+          "value": "P"
+        },
+        {
+          "label": "M",
+          "value": "M"
+        },
+        {
+          "label": "G",
+          "value": "G"
+        },
+        {
+          "label": "XG",
+          "value": "XG"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "title": "Grey Coat",
+      "price": 130,
+      "brand": "Robles",
+      "cover": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-luxsfpune34w7b", 
+      "categoryId": 2,
+      "type": "Coats",
+      "description": "Enjoy the beauty of italian cotton all over your body. This item will fit your body and warm you up all over and during spring. This item will fit your body and warm you up all over and during spring.  And over and over again, this is the text.",
+      "sizes": [
+        {
+          "label": "P",
+          "value": "P"
+        },
+        {
+          "label": "M",
+          "value": "M"
+        },
+        {
+          "label": "G",
+          "value": "G"
+        },
+        {
+          "label": "XG",
+          "value": "XG"
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "title": "Black Pants",
+      "price": 250,
+      "brand": "Azuvi",
+      "cover": "https://down-br.img.susercontent.com/file/sg-11134201-7rd56-lwhjnpc6le4rb1", 
+      "categoryId": 2,
+      "type": "Pants",
+      "description": "Enjoy the beauty of italian cotton all over your body. This item will fit your body and warm you up all over and during spring. This item will fit your body and warm you up all over and during spring.  And over and over again, this is the text.",
+      "sizes": [
+        {
+          "label": "P",
+          "value": "P"
+        },
+        {
+          "label": "M",
+          "value": "M"
+        },
+        {
+          "label": "G",
+          "value": "G"
+        },
+        {
+          "label": "XG",
+          "value": "XG"
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "title": "Grey pants",
+      "price": 230,
+      "brand": "Azuvi",
+      "cover": "https://down-br.img.susercontent.com/file/sg-11134201-7rd6g-lwhjnnanl03i18", 
+      "categoryId": 2,
+      "type": "Pants",
+      "description": "Enjoy the beauty of italian cotton all over your body. This item will fit your body and warm you up all over and during spring. This item will fit your body and warm you up all over and during spring.  And over and over again, this is the text.",
+      "sizes": [
+        {
+          "label": "P",
+          "value": "P"
+        },
+        {
+          "label": "M",
+          "value": "M"
+        },
+        {
+          "label": "G",
+          "value": "G"
+        },
+        {
+          "label": "XG",
+          "value": "XG"
+        }
+      ]
     }
+    
   ],
   "orders": [
     {
